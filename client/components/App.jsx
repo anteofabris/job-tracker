@@ -12,11 +12,39 @@ class App extends React.Component {
     this.state = {
       currentPage: 'landing-page'
     }
+    this.changePage = this.changePage.bind(this)
+    this.renderPage = this.renderPage.bind(this)
+  }
+
+  changePage(newPage) {
+    this.setState({currentPage: newPage})
+  }
+
+  renderPage() {
+    const {currentPage} = this.state;
+    if (currentPage === 'landing-page') {
+      return (<LandingPage changePage={this.changePage} />)
+    }
+    if (currentPage === 'home-page') {
+      return (<HomePage changePage={this.changePage}/>)
+    }
+    if (currentPage === 'applied-page') {
+      return (<AppliedPage changePage={this.changePage}/>)
+    }
+    if (currentPage === 'response-page') {
+      return (<ResponsePage changePage={this.changePage}/>)
+    }
+    if (currentPage === 'response-saved-page') {
+      return (<ResponseSavedPage changePage={this.changePage}/>)
+    }
   }
 
   render() {
     return (
       <div>
+        {
+          this.renderPage()
+        }
       </div>
     )
   }
