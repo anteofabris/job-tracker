@@ -1,16 +1,13 @@
-import React from 'react'
+import React from "react";
 
 class ResponseSavedPage extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-  
-    render() {
-      return (
-        <div>
-        </div>
-      )
-    }
+  constructor(props) {
+    super(props);
   }
-  
-  export default ResponseSavedPage;
+
+  render() {
+    return <div></div>;
+  }
+}
+
+export default ResponseSavedPage;

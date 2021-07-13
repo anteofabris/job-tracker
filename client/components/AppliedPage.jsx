@@ -1,16 +1,13 @@
-import React from 'react';
+import React from "react";
 
 class AppliedPage extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-  
-    render() {
-      return (
-        <div>
-        </div>
-      )
-    }
+  constructor(props) {
+    super(props);
   }
-  
-  export default AppliedPage;
+
+  render() {
+    return <div></div>;
+  }
+}
+
+export default AppliedPage;

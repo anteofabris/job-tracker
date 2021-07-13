@@ -1,16 +1,13 @@
-import React from 'react'
+import React from "react";
 
 class LandingPage extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-  
-    render() {
-      return (
-        <div>
-        </div>
-      )
-    }
+  constructor(props) {
+    super(props);
   }
-  
-  export default LandingPage;
+
+  render() {
+    return <div>LANDING</div>;
+  }
+}
+
+export default LandingPage;
