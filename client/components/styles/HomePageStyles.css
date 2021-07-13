@@ -1,0 +1,18 @@
+#hp-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-res {
+  display: flex;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  flex: 5 0 auto;
+}
+
+#res-container {
+  flex: 3 0 auto;
+}
